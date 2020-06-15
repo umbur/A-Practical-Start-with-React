@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./main-page.css";
 import Header from "./header";
+import FeaturedHouse from "./featured-house";
 
 class App extends Component {
   state = {};
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header subtitle="Providing houses all over the world" />
+        <FeaturedHouse house={this.state.featuredHouse} />
       </div>
     );
   }
